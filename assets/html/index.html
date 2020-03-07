@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz!</title>
     <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/script.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -24,35 +23,54 @@
         <a class="navbar-brand" href="../html/highscores.html">View Highscores</a>
         <div id="count">Timer</div>
       </nav>
-    <div class="container justify-content-center p-3">
-        <div class="row" id="questionDiv">
+    <div class="container p-3">
+        <div class="row justify-content-center font-weight-bold" id="questionDiv">
             This is a Quiz that will ask you questions
         </div>
         <div class="row">
             <div class="col">
                 <div class="row justify-content-center p-3">
-                    <button type="button" class="btn btn-info answer" id="ans1Div">Answer 1</button>
+                    <button type="button" class="btn btn-info answer" id="ans1Div" answer="1">Answer 1</button>
                 </div>
                 <div class="row justify-content-center p-3">
-                    <button type="button" class="btn btn-info answer" id="ans2Div">Answer 3</button>
+                    <button type="button" class="btn btn-info answer" id="ans2Div" answer="2">Answer 2</button>
                 </div>
             </div>
             <div class="col">
                 <div class="row justify-content-center p-3">
-                    <button type="button" class="btn btn-info answer" id="ans3Div">Answer 2</button>
+                    <button type="button" class="btn btn-info answer" id="ans3Div" answer="3">Answer 3</button>
                 </div>
                 <div class="row justify-content-center p-3">
-                    <button type="button" class="btn btn-info answer" id="ans4Div">Answer 4</button>
+                    <button type="button" class="btn btn-info answer" id="ans4Div" answer="4">Answer 4</button>
                 </div>
             </div>
         </div>
         <div class="row">
-            <button type="button" class="btn btn-primary btn-lg btn-block">Start Quiz</button>
-
+            <button type="button" class="btn btn-primary btn-lg btn-block" id="startBtn">Start Quiz</button>
         </div>
-
     </div>
-
+    <div class="container-sm p-3 border-top border-danger" id="endGame" style="visibility: hidden;">
+        <div class="row justify-content-center">
+            <div class="alert alert-warning">
+                Good Job!
+            </div>
+        </div>
+        <div class="row p-3">
+            <div class="col-sm justify-content-center p-3">
+                <p class="text-center font-weight-bold" id="scoreDisp">
+                <!-- Placeholder for Score -->
+                </p>
+            </div>
+            <div class="col-sm p-3">
+                <input class="form-control form-control-lg" type="text" placeholder="Your Name Here">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <button type="button" class="btn btn-primary btn-lg mr-3 p-3" id="saveBtn">Save score</button>
+            <button type="button" class="btn btn-warning btn-lg ml-3 p-3" id="playAgainBtn">Play Again</button>
+        </div>
+    </div>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
