@@ -1,3 +1,4 @@
+// Pulls highscores from local storage and populates into placeholder list
 function setHigh() {
   var savedScores = JSON.parse(localStorage.getItem("highscores"));
   for (let i = 0; i < savedScores.length; i++) {

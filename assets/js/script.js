@@ -22,7 +22,7 @@ var questionsArray = [
     answer2: "q3a2",
     answer3: "q3a3",
     answer4: "q3a4",
-    correct: "3"
+    correct: "2"
   },
   {
     question: "Question 4",
@@ -30,7 +30,7 @@ var questionsArray = [
     answer2: "q4a2",
     answer3: "q4a3",
     answer4: "q4a4",
-    correct: "3"
+    correct: "4"
   },
   {
     question: "Question 5",
@@ -41,7 +41,7 @@ var questionsArray = [
     correct: "3"
   }
 ];
-
+// variable declarations
 var questionDiv = document.getElementById("questionDiv");
 var ans1Div = document.getElementById("ans1Div");
 var ans2Div = document.getElementById("ans2Div");
@@ -134,7 +134,8 @@ document.addEventListener(
   false
 );
 
-
+// Save score button sends score and name input to local storage
+// Saves values to array then stringify to save to "highscores" item
 document.querySelector("#saveBtn").addEventListener("click", function() {
   var highScores = JSON.parse(localStorage.getItem("highscores")) || [];
   var scoreEntry = {
