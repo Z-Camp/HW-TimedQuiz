@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar bg-light">
+    <nav class="navbar bg-light">
         <a class="navbar-brand" href="../html/highscores.html">View Highscores</a>
         <div id="count">Timer</div>
       </nav>
@@ -27,7 +27,7 @@
         <div class="row justify-content-center font-weight-bold" id="questionDiv">
             This is a Quiz that will ask you questions
         </div>
-        <div class="row">
+        <div class="row answerContain" hidden>
             <div class="col">
                 <div class="row justify-content-center p-3">
                     <button type="button" class="btn btn-info answer" id="ans1Div" answer="1">Answer 1</button>
@@ -49,10 +49,12 @@
             <button type="button" class="btn btn-primary btn-lg btn-block" id="startBtn">Start Quiz</button>
         </div>
     </div>
+    <!-- second container for end game display
+        hidden by default then made visible at endGame -->
     <div class="container-sm p-3 border-top border-danger" id="endGame" style="visibility: hidden;">
         <div class="row justify-content-center">
             <div class="alert alert-warning">
-                Good Job!
+                The Quiz is over now
             </div>
         </div>
         <div class="row p-3">
@@ -62,12 +64,12 @@
                 </p>
             </div>
             <div class="col-sm p-3">
-                <input class="form-control form-control-lg" type="text" placeholder="Your Name Here">
+                <input class="form-control form-control-lg" type="text" id="nameInput" placeholder="Your Name Here">
             </div>
         </div>
         <div class="row justify-content-center">
             <button type="button" class="btn btn-primary btn-lg mr-3 p-3" id="saveBtn">Save score</button>
-            <button type="button" class="btn btn-warning btn-lg ml-3 p-3" id="playAgainBtn">Play Again</button>
+            <button type="button" class="btn btn-warning btn-lg ml-3 p-3" id="playAgainBtn" onClick="window.location.reload();">Play Again</button>
         </div>
     </div>
     <script src="../js/script.js"></script>
