@@ -2,7 +2,7 @@
 var questionsArray = [
   {
     question: "Question 1",
-    answer1: "q1a1",
+    answer1: "q1a1(answer)",
     answer2: "q1a2",
     answer3: "q1a3",
     answer4: "q1a4",
@@ -12,14 +12,14 @@ var questionsArray = [
     question: "Question 2",
     answer1: "q2a1",
     answer2: "q2a2",
-    answer3: "q2a3",
+    answer3: "q2a3(answer)",
     answer4: "q2a4",
     correct: "3"
   },
   {
     question: "Question 3",
     answer1: "q3a1",
-    answer2: "q3a2",
+    answer2: "q3a2(answer)",
     answer3: "q3a3",
     answer4: "q3a4",
     correct: "2"
@@ -29,14 +29,14 @@ var questionsArray = [
     answer1: "q4a1",
     answer2: "q4a2",
     answer3: "q4a3",
-    answer4: "q4a4",
+    answer4: "q4a4(answer)",
     correct: "4"
   },
   {
     question: "Question 5",
     answer1: "q5a1",
     answer2: "q5a2",
-    answer3: "q5a3",
+    answer3: "q5a3(answer)",
     answer4: "q5a4",
     correct: "3"
   }
@@ -101,7 +101,7 @@ function timer() {
   }, 1000);
 }
 
-//function to pull final score and display at end of quiz 
+//function to pull final score and display at end of quiz
 function displayScore() {
   startBtn.textContent = "Score: " + score;
 }
